@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ServicesTwoItem = ({ service }) => {
   return (
@@ -12,7 +13,8 @@ export const ServicesTwoItem = ({ service }) => {
       </div>
       <div className="services-content-two">
         <div className="icon">
-          <i className={service.icon}></i>
+          <FontAwesomeIcon icon={service.icon} />{" "}
+          {/* Use FontAwesomeIcon component */}
         </div>
         <h2 className="title">
           <Link to={service.href}>{service.title}</Link>

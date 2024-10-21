@@ -21,12 +21,12 @@ export const HeaderSix = () => {
                 <div className="header-top-left">
                   <ul className="list-wrap">
                     <li>
-                      <i className="flaticon-location"></i>256 Avenue, Mark
-                      Street, Newyork City
+                      <i className="flaticon-location"></i>1205/370 Pitt Street
+                      Sydney CBD NSW – 2000
                     </li>
                     <li>
                       <i className="flaticon-mail"></i>
-                      <a href="mailto:gerow@gmail.com">gerow@gmail.com</a>
+                      <a href="mailto:info@482186.co.au">info@482186.co.au</a>
                     </li>
                   </ul>
                 </div>
@@ -35,7 +35,7 @@ export const HeaderSix = () => {
                 <div className="header-top-right">
                   <div className="header-contact">
                     <a href="tel:0123456789">
-                      <i className="flaticon-phone-call"></i>+123 8989 444
+                      <i className="flaticon-phone-call"></i>+61 04 06 107 107
                     </a>
                   </div>
                   <div className="header-social">
@@ -79,7 +79,10 @@ export const HeaderSix = () => {
                   <nav className="menu-nav">
                     <div className="logo">
                       <Link to="/">
-                        <img src={LOGO} alt="Logo" />
+                        <div className="custom-logo-text">
+                          <span className="main-text">482-186</span>
+                          <span className="sub-text">Work Visa Expert</span>
+                        </div>
                       </Link>
                     </div>
 
@@ -95,7 +98,7 @@ export const HeaderSix = () => {
                         </li>
                         <li className="header-btn">
                           <Link to="/contact" className="btn btn-two">
-                            Get a Quote
+                            Book Consultation
                           </Link>
                         </li>
                       </ul>

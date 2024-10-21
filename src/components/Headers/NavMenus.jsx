@@ -9,194 +9,37 @@ export const NavMenus = () => {
     return path === pathname ? "active" : "";
   };
 
-  const homeLinkList = [
-    {
-      to: "/",
-      title: "Finance",
-    },
-    {
-      to: "/home-2",
-      title: "Consulting",
-    },
-    {
-      to: "/home-3",
-      title: "Insurance",
-    },
-    {
-      to: "/home-4",
-      title: "Digital Agency",
-    },
-    {
-      to: "/home-5",
-      title: "Business",
-    },
-  ];
-
-  const aboutLinkList = [
-    {
-      to: "/about",
-      title: "About One",
-    },
-    {
-      to: "/about-2",
-      title: "About Two",
-    },
-    {
-      to: "/about-3",
-      title: "About Three",
-    },
-    {
-      to: "/about-4",
-      title: "About Four",
-    },
-    {
-      to: "/about-5",
-      title: "About Five",
-    },
-  ];
-
-  const servicesLinkList = [
-    {
-      to: "/services",
-      title: "Services One",
-    },
-    {
-      to: "/services-2",
-      title: "Services Two",
-    },
-    {
-      to: "/services-3",
-      title: "Services Three",
-    },
-    {
-      to: "/services-4",
-      title: "Services Four",
-    },
-    {
-      to: "/services-5",
-      title: "Services Five",
-    },
-  ];
-
-  const servicesDetailsLinkList = [
-    {
-      to: "/services-details",
-      title: "Services Details One",
-    },
-    {
-      to: "/services-details-2",
-      title: "Services Details Two",
-    },
-    {
-      to: "/services-details-3",
-      title: "Services Details Three",
-    },
-    {
-      to: "/services-details-4",
-      title: "Services Details Four",
-    },
-    {
-      to: "/services-details-5",
-      title: "Services Details Five",
-    },
-  ];
-
   return (
     <div className="navbar-wrap main-menu d-none d-lg-flex">
       <ul className="navigation">
-        {/* home */}
-        <li
-          className={cn("menu-item-has-children", {
-            active: homeLinkList.map((el) => el.to).includes(pathname),
-          })}
-        >
-          <a href="#">Home</a>
-          <ul className="sub-menu">
-            {homeLinkList.map((el) => (
-              <li key={el.to} className={cn(isActiveCn(el.to))}>
-                <Link to={el.to}>{el.title}</Link>
-              </li>
-            ))}
-          </ul>
+        {/* Homepage */}
+        <li className={cn(isActiveCn("/"))}>
+          <Link to="/">Home</Link>
         </li>
 
-        {/* about */}
-        <li
-          className={cn("menu-item-has-children", {
-            active: aboutLinkList.map((el) => el.to).includes(pathname),
-          })}
-        >
-          <a href="#">About Us</a>
-          <ul className="sub-menu">
-            {aboutLinkList.map((el) => (
-              <li key={el.to} className={cn(isActiveCn(el.to))}>
-                <Link to={el.to}>{el.title}</Link>
-              </li>
-            ))}
-          </ul>
+        {/* About Us */}
+        <li className={cn(isActiveCn("/about"))}>
+          <Link to="/about">About Us</Link>
         </li>
 
-        {/* pages */}
+        {/* Visa */}
         <li
           className={cn("menu-item-has-children", {
-            active: [
-              ...servicesLinkList,
-              ...servicesDetailsLinkList,
-              "/project-details",
-              "/team-details",
-              "/error",
-            ]
-              .map((el) => el.to)
-              .includes(pathname),
+            active: ["/482-visa", "/186-visa"].includes(pathname),
           })}
         >
-          <a href="#">Pages</a>
+          <a href="#">Visa</a>
           <ul className="sub-menu">
-            <li
-              className={cn("menu-item-has-children", {
-                active: [...servicesLinkList]
-                  .map((el) => el.to)
-                  .includes(pathname),
-              })}
-            >
-              <Link to="/services">Services</Link>
-              <ul className="sub-menu">
-                {servicesLinkList.map((el) => (
-                  <li key={el.to} className={cn(isActiveCn(el.to))}>
-                    <Link to={el.to}>{el.title}</Link>
-                  </li>
-                ))}
-              </ul>
+            <li className={cn(isActiveCn("/482-visa"))}>
+              <Link to="/482-visa">482 Visa</Link>
             </li>
-            <li
-              className={cn("menu-item-has-children", {
-                active: [...servicesDetailsLinkList]
-                  .map((el) => el.to)
-                  .includes(pathname),
-              })}
-            >
-              <Link to="/services-details">Services Details</Link>
-              <ul className="sub-menu">
-                {servicesDetailsLinkList.map((el) => (
-                  <li key={el.to} className={cn(isActiveCn(el.to))}>
-                    <Link to={el.to}>{el.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            <li className={cn(isActiveCn("/project-details"))}>
-              <Link to="/project-details">Portfolio Details</Link>
-            </li>
-            <li className={cn(isActiveCn("/team-details"))}>
-              <Link to="/team-details">Team Details</Link>
-            </li>
-            <li className={cn(isActiveCn("/error"))}>
-              <Link to="/error">404 Error</Link>
+            <li className={cn(isActiveCn("/186-visa"))}>
+              <Link to="/186-visa">186 Visa</Link>
             </li>
           </ul>
         </li>
 
-        {/* blog */}
+        {/* Blog */}
         <li
           className={cn("menu-item-has-children", {
             active: ["/blog", "/blog-details"].includes(pathname),
@@ -213,9 +56,28 @@ export const NavMenus = () => {
           </ul>
         </li>
 
-        {/* contact */}
+        {/* Services */}
+        <li
+          className={cn("menu-item-has-children", {
+            active: ["/services-details", "/services-details"].includes(
+              pathname
+            ),
+          })}
+        >
+          <a href="#">Services</a>
+          <ul className="sub-menu">
+            <li className={cn(isActiveCn("/services"))}>
+              <Link to="/services">Book Video Consultation</Link>
+            </li>
+            <li className={cn(isActiveCn("/services"))}>
+              <Link to="/services">Skills Assessment</Link>
+            </li>
+          </ul>
+        </li>
+
+        {/* Contact Us */}
         <li className={cn(isActiveCn("/contact"))}>
-          <Link to="/contact">contacts</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </div>

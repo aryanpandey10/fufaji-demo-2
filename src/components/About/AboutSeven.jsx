@@ -38,7 +38,7 @@ export const AboutSeven = () => {
                 data-aos="fade-left"
                 data-aos-delay="0"
               >
-                <h2 className="title">25</h2>
+                <h2 className="title">35</h2>
                 <p>Years Of Experience</p>
               </div>
             </div>
@@ -47,15 +47,17 @@ export const AboutSeven = () => {
           <div className="col-lg-6">
             <div className="about-content-seven">
               <div className="section-title mb-30">
-                <span className="sub-title">Who We are</span>
+                <span className="sub-title">Who We Are</span>
                 <h2 className="title">
-                  Innovative Business Solutions For Success Company
+                  Australian Work Visa Experts with Over 35 Years of Experience
                 </h2>
               </div>
               <p>
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet consecteture Borem ipsum dolor sitter
-                consectetur adipiscing elita florai psum.
+                The migration team at <strong>482-186</strong> has a combined
+                experience of well over 35 years within the Australian migration
+                field. Our expert Australian migration agents handle your case
+                from start to finish, ensuring your work visa for Australia is
+                in safe hands.
               </p>
 
               <div className="success-wrap-two">
@@ -68,7 +70,7 @@ export const AboutSeven = () => {
                       <h2 className="count">
                         <Odometer end={152} />K
                       </h2>
-                      <p>Total revenue</p>
+                      <p>Visa Applications</p>
                     </div>
                   </li>
                   <li>
@@ -77,22 +79,23 @@ export const AboutSeven = () => {
                     </div>
                     <div className="content">
                       <h2 className="count">
-                        <Odometer end={95} />%
+                        <Odometer end={98} />%
                       </h2>
-                      <p>Increase in sales</p>
+                      <p>Success Rate</p>
                     </div>
                   </li>
                 </ul>
               </div>
 
               <p className="info-two">
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet, consecteture. consecteture.Borem ipsum
-                dolor sit amectetur adipiscing.
+                Whether you have one year of full-time work experience within
+                your field or more than 3 years of experience, our team will
+                guide you through the entire process, from initial consultation
+                to final approval.
               </p>
 
               <Link to="/contact" className="btn btn-three">
-                Contact With Us
+                Contact Us Today
               </Link>
             </div>
           </div>

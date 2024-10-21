@@ -20,22 +20,22 @@ export const PROJECT_LIST_TWO = [
     id: 1,
     img: H2_PROJECT_IMG01,
     href: "/project-details",
-    title: "Finance Consultancy",
-    tag: "Advisory",
+    title: "Business Strategy Consultancy",
+    tag: "Strategy",
   },
   {
     id: 2,
     img: H2_PROJECT_IMG02,
     href: "/project-details",
-    title: "Finance Consultancy",
+    title: "Financial Advisory",
     tag: "Advisory",
   },
   {
     id: 3,
     img: H2_PROJECT_IMG03,
     href: "/project-details",
-    title: "Finance Consultancy",
-    tag: "Advisory",
+    title: "Market Analysis",
+    tag: "Analysis",
   },
 ];
 

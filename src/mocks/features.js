@@ -1,23 +1,30 @@
 import { RIGHT_ARROW } from "../lib/assets";
+import {
+  faPassport,
+  faFileAlt,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const FEATURE_TWO_LIST = [
   {
     id: 1,
-    icon: "flaticon-profit",
-    title: "Growing Business",
-    subtitle: "Finance helps you to convert into a strategic asset get.",
+    icon: faPassport, // Using the FontAwesome icon
+    title: "Australian Work Visas",
+    subtitle: "Expert guidance to secure your Australian work visa with ease.",
   },
   {
     id: 2,
-    icon: "flaticon-investment",
-    title: "Finance Investment",
-    subtitle: "Finance helps you to convert into a strategic asset get.",
+    icon: faFileAlt, // Using the FontAwesome icon
+    title: "Visa Application Assistance",
+    subtitle:
+      "Comprehensive support to ensure your visa application is accurate and complete.",
   },
   {
     id: 3,
-    icon: "flaticon-taxes",
-    title: "Tax Advisory",
-    subtitle: "Finance helps you to convert into a strategic asset get.",
+    icon: faUserTie, // Using the FontAwesome icon
+    title: "Migration Advisory",
+    subtitle:
+      "Tailored advice to make the migration process stress-free and efficient.",
   },
 ];
 

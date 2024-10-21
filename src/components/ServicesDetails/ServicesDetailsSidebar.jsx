@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cn from "classnames";
+import { services } from "../../mocks/servicesData"; // Adjust the import path accordingly
 import { SERVICES_DETAILS01 } from "../../lib/assets";
 
 export const ServicesDetailsSidebar = ({
   hideContact = false,
   hideTitle = false,
 }) => {
-  const services = [
-    { label: "business Analysis", href: "/services-details" },
-    { label: "Tax Strategy", href: "/services-details" },
-    { label: "Financial Advisory", href: "/services-details" },
-    { label: "business Growth", href: "/services-details" },
-    { label: "Innovation Idea", href: "/services-details" },
-    { label: "Market Research", href: "/services-details" },
-  ];
-
   return (
     <aside className="services-sidebar">
       {/* Our Services */}
@@ -23,9 +15,9 @@ export const ServicesDetailsSidebar = ({
         <div className="services-cat-list mb-30">
           <ul className="list-wrap">
             {services.map((item, idx) => (
-              <li key={item.label} className={cn({ active: idx == 0 })}>
+              <li key={item.title} className={cn({ active: idx === 0 })}>
                 <Link to={item.href}>
-                  {item.label} <i className="flaticon-right-arrow"></i>
+                  {item.title} <i className="flaticon-right-arrow"></i>
                 </Link>
               </li>
             ))}
@@ -37,9 +29,9 @@ export const ServicesDetailsSidebar = ({
           <div className="services-cat-list">
             <ul className="list-wrap">
               {services.map((item, idx) => (
-                <li key={item.label} className={cn({ active: idx == 0 })}>
+                <li key={item.title} className={cn({ active: idx === 0 })}>
                   <Link to={item.href}>
-                    {item.label} <i className="flaticon-right-arrow"></i>
+                    {item.title} <i className="flaticon-right-arrow"></i>
                   </Link>
                 </li>
               ))}
@@ -52,7 +44,7 @@ export const ServicesDetailsSidebar = ({
       <div className="services-widget">
         <h4 className="sw-title">Brochure</h4>
         <div className="services-brochure-wrap">
-          <p>when an unknown printer took ga lley offer typey anddey.</p>
+          <p>When an unknown printer took ga lley offer typey anddey.</p>
           <a
             href={SERVICES_DETAILS01}
             target="_blank"
@@ -72,8 +64,8 @@ export const ServicesDetailsSidebar = ({
         </div>
       </div>
 
-      {/* contact */}
-      {hideContact ? null : (
+      {/* Contact */}
+      {!hideContact && (
         <div className="services-widget services-sidebar-contact">
           <h4 className="title">If You Need Any Help Contact With Us</h4>
           <a href="tel:0123456789">

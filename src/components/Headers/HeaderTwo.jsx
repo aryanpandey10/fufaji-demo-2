@@ -24,12 +24,12 @@ export const HeaderTwo = () => {
                 <div className="header-top-left">
                   <ul className="list-wrap">
                     <li>
-                      <i className="flaticon-location"></i>256 Avenue, Mark
-                      Street, Newyork City
+                      <i className="flaticon-location"></i>1205/370 Pitt Street
+                      Sydney CBD NSW – 2000
                     </li>
                     <li>
                       <i className="flaticon-mail"></i>
-                      <a href="mailto:gerow@gmail.com">gerow@gmail.com</a>
+                      <a href="mailto:gerow@gmail.com">info@482186.co.au</a>
                     </li>
                   </ul>
                 </div>
@@ -62,7 +62,7 @@ export const HeaderTwo = () => {
                   </div>
                   <div className="header-top-btn">
                     <Link to="/contact">
-                      <i className="flaticon-briefcase"></i>Free Consulting
+                      <i className="flaticon-briefcase"></i>Book Consulting
                     </Link>
                   </div>
                 </div>
@@ -80,7 +80,10 @@ export const HeaderTwo = () => {
                   <nav className="menu-nav">
                     <div className="logo">
                       <Link to="/">
-                        <img src={LOGO} alt="Logo" />
+                        <div className="custom-logo-text">
+                          <span className="main-text">482-186</span>
+                          <span className="sub-text">Work Visa Expert</span>
+                        </div>
                       </Link>
                     </div>
 
@@ -95,7 +98,7 @@ export const HeaderTwo = () => {
                           </div>
                           <div className="content">
                             <span>Hot Line Number</span>
-                            <a href="tel:0123456789">+123 8989 444</a>
+                            <a href="tel:0123456789">+61 04 06 107 107</a>
                           </div>
                         </li>
                         <li className="header-search">

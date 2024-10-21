@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon
 
 export const ServiceOneItem = ({ service }) => {
   return (
@@ -7,7 +8,8 @@ export const ServiceOneItem = ({ service }) => {
       <div className="services-content">
         <div className="content-top">
           <div className="icon">
-            <i className={service.icon}></i>
+            {/* Use FontAwesomeIcon component here */}
+            <FontAwesomeIcon icon={service.icon} size="1x" />
           </div>
 
           <h2 className="title">{service.title} </h2>

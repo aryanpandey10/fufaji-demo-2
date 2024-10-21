@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import { Link } from "react-router-dom";
-import { LOGO } from "../../lib/assets";
+// import { LOGO } from "../../lib/assets";
 
 export const Sidebar = () => {
   useEffect(() => {
@@ -24,7 +24,10 @@ export const Sidebar = () => {
         </div>
         <div className="logo-side mb-30">
           <Link to="/">
-            <img src={LOGO} alt="Logo" />
+            <div className="custom-logo-text">
+              <span className="main-text">482-186</span>
+              <span className="sub-text">Work Visa Expert</span>
+            </div>
           </Link>
         </div>
         <div className="side-info mb-30">

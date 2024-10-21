@@ -11,10 +11,10 @@ import {
 
 export const AboutThree = () => {
   const list = [
-    "100% Better results",
-    "Suspe ndisse suscipit sagittis",
-    "Promis Specific TimelineI Guarantee",
-    "Review Credit Reports",
+    "Proven Results in Visa Applications",
+    "Personalized Migration Support",
+    "Timely Visa Processing Guaranteed",
+    "Comprehensive Visa and Migration Advisory",
   ];
 
   return (
@@ -41,9 +41,9 @@ export const AboutThree = () => {
                 data-aos-delay="300"
               >
                 <h2 className="title">
-                  25 <span>Years</span>
+                  35 <span>Years</span>
                 </h2>
-                <p>Of Experience in This Finance Advisory Company.</p>
+                <p>Of Experience in Australian Migration Services.</p>
               </div>
             </div>
           </div>
@@ -51,15 +51,16 @@ export const AboutThree = () => {
           <div className="col-lg-6">
             <div className="about-content-three">
               <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
-                <span className="sub-title">Get To know US</span>
+                <span className="sub-title">Get To Know Us</span>
                 <h2 className="title tg-element-title">
-                  Innovative Business Solutions for Financial Company
+                  Expert Australian Migration Solutions
                 </h2>
               </div>
               <p className="info-one">
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet, consecteture.Borem ipsum dolor sit amet,
-                consectetur adipiscing elita florai psum.
+                At Aussie Education, we specialize in providing top-notch
+                migration advice and assistance for Australian work visas,
+                permanent residency, and more. Our team of migration experts
+                ensures a smooth and successful process for every client.
               </p>
 
               <div className="about-list-two">
@@ -72,16 +73,18 @@ export const AboutThree = () => {
                 </ul>
               </div>
               <p>
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet, consecteture.
+                Our comprehensive services make sure that your migration journey
+                is stress-free and tailored to meet your specific needs. With
+                over 35 years of experience, you are in safe hands with our
+                experts.
               </p>
               <div className="about-author-info">
                 <div className="thumb">
                   <img src={ABOUT_AUTHOR} alt="" />
                 </div>
                 <div className="content">
-                  <h2 className="title">Mark Stranger</h2>
-                  <span>CEO, Gerow Finance</span>
+                  <h2 className="title">Satyaprakash Shukla</h2>
+                  <span>CEO, Aussie Education</span>
                 </div>
                 <div className="signature">
                   <img src={SIGNATURE} alt="" />

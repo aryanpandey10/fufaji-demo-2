@@ -26,8 +26,8 @@ export const TEAM_LIST_TWO = [
     id: 1,
     href: "/team-details",
     src: H2_TEAM_IMG01,
-    title: "Brooklyn Simmons",
-    designation: "Finance Advisor",
+    title: "Satya Shukla",
+    designation: "CEO",
   },
   {
     id: 2,

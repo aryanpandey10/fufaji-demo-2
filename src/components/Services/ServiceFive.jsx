@@ -3,8 +3,7 @@ import { SERVICES_ONE_LIST } from "../../mocks/services";
 import { ServiceOneItem } from "./ServiceOneItem";
 
 export const ServiceFive = () => {
-  const list = [...SERVICES_ONE_LIST, ...SERVICES_ONE_LIST];
-  list.length = 6;
+  const list = SERVICES_ONE_LIST; // Use the updated list here
 
   return (
     <section className="services-area-five inner-services-bg">
@@ -13,9 +12,11 @@ export const ServiceFive = () => {
           <div className="col-xl-6 col-lg-8 col-md-10">
             <div className="section-title-two text-center mb-50">
               <h2 className="title">
-                Spotlight some most important features We have
+                Spotlight some most important features we offer
               </h2>
-              <p>Borem ipsum dolor sit amet consectetur adipiscing elita</p>
+              <p>
+                Explore our range of migration services tailored to your needs.
+              </p>
             </div>
           </div>
         </div>

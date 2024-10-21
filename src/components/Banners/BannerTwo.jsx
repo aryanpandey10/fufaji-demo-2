@@ -21,14 +21,16 @@ export const BannerTwo = () => {
                   data-aos="fade-up"
                   data-aos-delay="0"
                 >
-                  We Are Expert In This Field
+                  Trusted Experts in Visa Consultation
                 </span>
                 <h2 className="title" data-aos="fade-up" data-aos-delay="300">
-                  Get a Smart Way For Your Business
+                  Your Pathway to a Successful Visa Application
                 </h2>
                 <p data-aos="fade-up" data-aos-delay="500">
-                  Agilos helps you to convert your data into a strategic asset
-                  and get top-notch business insights.
+                  At Aussie Education, we are dedicated to helping individuals
+                  and businesses achieve visa success. Let our experienced
+                  consultants offer the tailored advice you need to ensure your
+                  visa application is handled professionally and efficiently.
                 </p>
                 <div className="banner-btn">
                   <Link

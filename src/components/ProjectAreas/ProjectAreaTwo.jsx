@@ -9,18 +9,19 @@ export const ProjectAreaTwo = () => {
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">
             <div className="section-title-two mb-40 tg-heading-subheading animation-style3">
-              <span className="sub-title">Complete Projects</span>
+              <span className="sub-title">Our Completed Work</span>
               <h2 className="title tg-element-title">
-                Our recently completed <br />
-                projects list
+                Recently Completed <br />
+                Consulting Projects
               </h2>
             </div>
           </div>
           <div className="col-lg-6 col-md-10">
             <div className="project-content-top">
               <p>
-                Ever find yourself staring at your computer screen a good
-                consulting slogan to come to mind? Oftentimes.
+                Our team has successfully executed a range of business and
+                financial consulting projects, delivering exceptional results
+                for our clients.
               </p>
             </div>
           </div>

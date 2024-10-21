@@ -12,43 +12,55 @@ import {
   SERVICES_IMG03,
   SERVICES_ITEM_SHAPE,
 } from "../lib/assets";
+import {
+  faVideo,
+  faClipboardCheck,
+  faCalendar,
+  faCheckSquare,
+} from "@fortawesome/free-solid-svg-icons"; // Import icons here
+import {
+  faCalendarAlt,
+  faUserShield,
+  faBriefcase,
+  faPassport,
+} from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
 
 export const SERVICES_TWO_LIST = [
   {
     id: 1,
     src: H2_SERVICES_IMG01,
     srcShape: SERVICES_ITEM_SHAPE,
-    icon: "flaticon-piggy-bank",
+    icon: faVideo, // FontAwesome icon
     href: "/services-details",
-    title: "Finance Planning",
-    subtitle: "Morem ipsum dolor ametey consectre adipiscing.",
+    title: "Book a Video Consultation",
+    subtitle: "Schedule a one-on-one consultation with our migration experts.",
   },
   {
     id: 2,
     src: H2_SERVICES_IMG02,
     srcShape: SERVICES_ITEM_SHAPE,
-    icon: "flaticon-calculator",
+    icon: faClipboardCheck, // FontAwesome icon
     href: "/services-details",
-    title: "Tax File Audit",
-    subtitle: "Morem ipsum dolor ametey consectre adipiscing.",
+    title: "Skill Assessment Assistance",
+    subtitle: "Get professional help with your skill assessment application.",
   },
   {
     id: 3,
     src: H2_SERVICES_IMG03,
     srcShape: SERVICES_ITEM_SHAPE,
-    icon: "flaticon-money",
+    icon: faCalendar, // FontAwesome icon
     href: "/services-details",
-    title: "Investment Idea",
-    subtitle: "Morem ipsum dolor ametey consectre adipiscing.",
+    title: "Visa Application Guidance",
+    subtitle: "Expert guidance through every step of your visa application.",
   },
   {
     id: 4,
     src: H2_SERVICES_IMG04,
     srcShape: SERVICES_ITEM_SHAPE,
-    icon: "flaticon-layers",
+    icon: faCheckSquare, // FontAwesome icon
     href: "/services-details",
-    title: "Risk Management",
-    subtitle: "Morem ipsum dolor ametey consectre adipiscing.",
+    title: "Migration Plan Consultation",
+    subtitle: "Create a customized migration plan based on your needs.",
   },
 ];
 
@@ -117,38 +129,51 @@ export const SERVICES_FOUR_LIST = [
 export const SERVICES_ONE_LIST = [
   {
     id: 1,
-    icon: "flaticon-briefcase",
+    icon: faVideo, // FontAwesome icon
     href: "/services-details",
     src: SERVICES_IMG01,
-    title: "Business Analysis",
-    subtitle:
-      "When An Unknown Printer Took Gerty Galley Types Awecr Erambled Type Specimen Book.",
+    title: "Video Consultation",
+    subtitle: "Book a one-on-one video consultation with migration experts.",
   },
   {
     id: 2,
-    icon: "flaticon-taxes",
+    icon: faClipboardCheck, // FontAwesome icon
     href: "/services-details",
     src: SERVICES_IMG02,
-    title: "Tax Strategy",
-    subtitle:
-      "When An Unknown Printer Took Gerty Galley Types Awecr Erambled Type Specimen Book.",
+    title: "Skill Assessment Assistance",
+    subtitle: "Get assistance with your skill assessment application.",
   },
   {
     id: 3,
-    icon: "flaticon-money",
+    icon: faCalendarAlt, // FontAwesome icon
     href: "/services-details",
     src: SERVICES_IMG03,
-    title: "Financial Advice",
-    subtitle:
-      "When An Unknown Printer Took Gerty Galley Types Awecr Erambled Type Specimen Book.",
+    title: "Visa Application Guidance",
+    subtitle: "Guidance through each step of your visa application process.",
   },
   {
     id: 4,
-    icon: "flaticon-taxes",
+    icon: faUserShield, // FontAwesome icon
+    href: "/services-details",
+    src: SERVICES_IMG01,
+    title: "Visa Advisory (482 & 186)",
+    subtitle: "Specialized advice on 482 and 186 visa options and pathways.",
+  },
+  {
+    id: 5,
+    icon: faBriefcase, // FontAwesome icon
     href: "/services-details",
     src: SERVICES_IMG02,
-    title: "Tax Strategy",
+    title: "Business Visa Services",
+    subtitle: "Tailored assistance for business visa applicants.",
+  },
+  {
+    id: 6,
+    icon: faPassport, // FontAwesome icon
+    href: "/services-details",
+    src: SERVICES_IMG03,
+    title: "Permanent Residency Pathways",
     subtitle:
-      "When An Unknown Printer Took Gerty Galley Types Awecr Erambled Type Specimen Book.",
+      "Consultation for those seeking permanent residency in Australia.",
   },
 ];

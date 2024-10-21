@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LOGO, W_LOGO } from "../../lib/assets";
 
 export const FooterOne = () => {
   return (
@@ -27,7 +26,7 @@ export const FooterOne = () => {
                           <i className="flaticon-phone-call"></i>
                         </div>
                         <div className="content">
-                          <a href="tel:0123456789">+123 888 9999</a>
+                          <a href="tel:+1238889999">+123 888 9999</a>
                         </div>
                       </li>
                       <li>
@@ -57,7 +56,7 @@ export const FooterOne = () => {
                         <Link to="/contact">Careers</Link>
                       </li>
                       <li>
-                        <Link to="/contact">Press media</Link>
+                        <Link to="/contact">Press Media</Link>
                       </li>
                       <li>
                         <Link to="/blog">Our Blog</Link>
@@ -75,7 +74,7 @@ export const FooterOne = () => {
                   <div className="footer-link">
                     <ul className="list-wrap">
                       <li>
-                        <Link to="/contact">How it’s Work</Link>
+                        <Link to="/contact">How it Works</Link>
                       </li>
                       <li>
                         <Link to="/contact">Partners</Link>
@@ -98,14 +97,14 @@ export const FooterOne = () => {
                   <h4 className="fw-title">Subscribe to Our Newsletter</h4>
                   <div className="footer-newsletter">
                     <p>
-                      Sign up to Privitar’s weekly newsletter to get the latest
-                      updates.
+                      Sign up to Aussie Education’s weekly newsletter to get the
+                      latest updates.
                     </p>
                     <form action="#">
-                      <input type="email" placeholder="enter your e-mail" />
+                      <input type="email" placeholder="Enter your e-mail" />
                       <button type="submit">Subscribe</button>
                     </form>
-                    <span>We don’t send you any spam</span>
+                    <span>We don’t send you any spam.</span>
                   </div>
                 </div>
               </div>
@@ -115,13 +114,16 @@ export const FooterOne = () => {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="left-sider">
-                  <div className="f-logo">
+                  <div className="fw-logo">
                     <Link to="/">
-                      <img src={W_LOGO} alt="" />
+                      <div className="custom-logo-text">
+                        <span className="main-text">482-186</span>
+                        <span className="sub-text">Work Visa Expert</span>
+                      </div>
                     </Link>
                   </div>
                   <div className="copyright-text">
-                    <p>Copyright © gerow | All Right Reserved</p>
+                    <p>Copyright © Aussie Education | All Right Reserved</p>
                   </div>
                 </div>
               </div>

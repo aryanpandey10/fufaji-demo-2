@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../../layouts/Layout";
-import { ContactAreaInner } from "../../components/ContactAreas/ContactAreaInner";
+import { ContactAreaInner } from "../../components/ContactAreas/ContactAreaInner"; // Correct import statement
 import { ContactAreaMap } from "../../components/ContactAreas/ContactAreaMap";
 
 const ContactPage = () => {

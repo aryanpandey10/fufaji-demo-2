@@ -1,10 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faVideo,
+  faClipboardCheck,
+  faPassport,
+} from "@fortawesome/free-solid-svg-icons";
+import { Odometer } from "../Odometer/Odometer";
 import {
   OVERVIEW_IMG01,
   OVERVIEW_IMG02,
   OVERVIEW_IMG_SHAPE,
 } from "../../lib/assets";
-import { Odometer } from "../Odometer/Odometer";
 
 export const OverviewAreaOne = () => {
   return (
@@ -18,53 +24,59 @@ export const OverviewAreaOne = () => {
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 col-md-10">
             <div className="overview-img-wrap">
-              <img src={OVERVIEW_IMG01} alt="" />
-              <img src={OVERVIEW_IMG02} alt="" data-parallax='{"x" : 50 }' />
-              <img src={OVERVIEW_IMG_SHAPE} alt="" />
+              <img src={OVERVIEW_IMG01} alt="Overview" />
+              <img
+                src={OVERVIEW_IMG02}
+                alt="Additional Shape"
+                data-parallax='{"x" : 50 }'
+              />
+              <img src={OVERVIEW_IMG_SHAPE} alt="Shape" />
               <div className="icon">
-                <i className="flaticon-report-1"></i>
+                <FontAwesomeIcon icon={faVideo} size="1x" />
               </div>
             </div>
           </div>
+
           <div className="col-lg-6">
             <div className="overview-content">
               <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
-                <span className="sub-title">Company Overview</span>
+                <span className="sub-title">Our Services</span>
                 <h2 className="title tg-element-title">
-                  Plan your business strategy with Our Experts
+                  Expert Guidance for Your Immigration and Consultation Needs
                 </h2>
               </div>
               <p className="info-one">
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet, consecteture.Borem ipsum dolor sit amet,
-                consectetur adipiscing elita florai psum.
+                We provide comprehensive services including video consultations,
+                skill assessment assistance, and visa application guidance. Our
+                team of experts will help you every step of the way.
               </p>
               <p className="info-two">
-                Morem ipsum dolor sit amet, consectetur adipiscing elita florai
-                psum dolor sit amet, consecteture.Borem.
+                Whether you need personalized consultations or support with
+                complex applications, we ensure a smooth and hassle-free
+                experience tailored to your needs.
               </p>
               <div className="content-bottom">
-                <ul className="list-wrap">
+                <ul className="list-wrap d-flex justify-content-between">
                   <li>
                     <div className="icon">
-                      <i className="flaticon-trophy"></i>
+                      <FontAwesomeIcon icon={faClipboardCheck} size="1x" />
                     </div>
                     <div className="content">
                       <h2 className="count">
-                        <Odometer end={235} />+
+                        <Odometer end={1500} />+
                       </h2>
-                      <p>Best Award</p>
+                      <p style={{ fontSize: "10px" }}>Assessments Completed</p>
                     </div>
                   </li>
                   <li>
                     <div className="icon">
-                      <i className="flaticon-rating"></i>
+                      <FontAwesomeIcon icon={faPassport} size="1x" />
                     </div>
                     <div className="content">
                       <h2 className="count">
-                        <Odometer end={98} />k
+                        <Odometer end={200} />+
                       </h2>
-                      <p>Happy Clients</p>
+                      <p style={{ fontSize: "10px" }}>Applications Approved</p>
                     </div>
                   </li>
                 </ul>

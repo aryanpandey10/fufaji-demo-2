@@ -6,7 +6,7 @@ import { ChooseAreaOne } from "../../components/ChooseAreas/ChooseAreaOne";
 import { CtaAreaOne } from "../../components/CtaAreas/CtaAreaOne";
 import { FeatureTwo } from "../../components/Features/FeatureTwo";
 import { OverviewAreaOne } from "../../components/OverviewAreas/OverviewAreaOne";
-import { PricingAreaTwo } from "../../components/PricingAreas/PricingAreaTwo";
+// import { PricingAreaTwo } from "../../components/PricingAreas/PricingAreaTwo";
 import { ProjectAreaTwo } from "../../components/ProjectAreas/ProjectAreaTwo";
 import { RequestAreaTwo } from "../../components/RequestAreas/RequestAreaTwo";
 import { ServicesTwo } from "../../components/Services/ServicesTwo";
@@ -51,7 +51,7 @@ const Home = () => {
       <TestimonialAreaTwo />
 
       {/* pricing-area */}
-      <PricingAreaTwo />
+      {/* <PricingAreaTwo /> */}
 
       {/* blog-area */}
       <BlogAreaTwo />

@@ -15,7 +15,7 @@ export const CtaAreaOne = () => {
                   </div>
                   <div className="content">
                     <span>Call For More Info</span>
-                    <a href="tel:0123456789">+123 8989 444</a>
+                    <a href="tel:0123456789">+61 04 06 107 107</a>
                   </div>
                 </div>
                 <h2 className="title">

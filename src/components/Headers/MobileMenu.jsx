@@ -46,7 +46,10 @@ export const MobileMenu = () => {
           </div>
           <div className="nav-logo">
             <Link to="/">
-              <img src={LOGO} alt="Logo" />
+              <div className="custom-logo-text">
+                <span className="main-text">482-186</span>
+                <span className="sub-text">Work Visa Expert</span>
+              </div>
             </Link>
           </div>
           <div className="mobile-search">
