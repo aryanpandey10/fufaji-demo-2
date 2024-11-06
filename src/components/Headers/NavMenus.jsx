@@ -31,10 +31,10 @@ export const NavMenus = () => {
           <a href="#">Visa</a>
           <ul className="sub-menu">
             <li className={cn(isActiveCn("/482-visa"))}>
-              <Link to="/482-visa">482 Visa</Link>
+              <Link to="/visas">482 Visa</Link>
             </li>
             <li className={cn(isActiveCn("/186-visa"))}>
-              <Link to="/186-visa">186 Visa</Link>
+              <Link to="/visas">186 Visa</Link>
             </li>
           </ul>
         </li>
@@ -66,11 +66,14 @@ export const NavMenus = () => {
         >
           <a href="#">Services</a>
           <ul className="sub-menu">
-            <li className={cn(isActiveCn("/services"))}>
+            <li className={cn(isActiveCn("/services-details"))}>
               <Link to="/services">Book Video Consultation</Link>
             </li>
-            <li className={cn(isActiveCn("/services"))}>
+            <li className={cn(isActiveCn("/services-details-2"))}>
               <Link to="/services">Skills Assessment</Link>
+            </li>
+            <li className={cn(isActiveCn("/downloads"))}>
+              <Link to="/downloads">Downloads</Link>
             </li>
           </ul>
         </li>

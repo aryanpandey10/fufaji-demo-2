@@ -4537,6 +4537,10 @@ label {
   opacity: 1;
 }
 
+.services-thumb img {
+  width: 100%;
+}
+
 .services-thumb-two img {
   width: 100%;
 }

@@ -1,0 +1,33 @@
+.difference-table-wrap {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.difference-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.difference-table th,
+.difference-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.difference-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.difference-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.difference-table tr:hover {
+    background-color: #e2e2e2;
+}
+
+.difference-table td {
+    vertical-align: top;
+}

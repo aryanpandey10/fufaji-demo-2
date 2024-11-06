@@ -1,0 +1,173 @@
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f8faff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #334770;
+    border: 1px solid #e1e5ee;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.table th {
+    background-color: #00194c !important;
+    color: #ffffff;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 17.6px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #e1e5ee;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f5ff;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #b3ccff;
+}
+
+.table-bordered {
+    border: 1px solid #e1e5ee;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #e1e5ee;
+}
+
+/* Section Title */
+.section-title-two {
+    font-family: "Urbanist", sans-serif;
+    color: #00194c;
+    line-height: 1.2;
+}
+
+.section-title-two .title {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.section-title-two p {
+    color: #334770;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+    /* Reduce padding and font size on smaller screens */
+    .table th,
+    .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Stack elements vertically for better readability on mobile */
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+
+    /* Reduce title font size on mobile */
+    .section-title-two .title {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Further reduce font sizes and padding for very small screens */
+    .table th,
+    .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    .section-title-two .title {
+        font-size: 1.25em;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .table td button {
+        font-size: 13px;
+        /* Slightly smaller font */
+        padding: 14px 14px 14px 18px;
+        /* Adjust padding */
+    }
+
+    .table td button::before {
+        width: 40px;
+        /* Smaller size for pseudo-element */
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table td button {
+        font-size: 12px;
+        /* Even smaller font for very small screens */
+        padding: 10px 10px 10px 14px;
+        /* Further reduce padding */
+    }
+
+    .table td button::before {
+        width: 30px;
+        /* Further reduction in size for the pseudo-element */
+        height: 30px;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .table td a {
+        font-size: 13px;
+        /* Slightly smaller font */
+        padding: 14px;
+        /* Adjust padding */
+    }
+
+    .table td a::before {
+        width: 40px;
+        /* Smaller size for pseudo-element */
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table td a {
+        font-size: 12px;
+        /* Even smaller font for very small screens */
+        padding: 9px;
+        /* Further reduce padding */
+    }
+
+    .table td a::before {
+        width: 25px;
+        /* Further reduction in size for the pseudo-element */
+        height: 25px;
+    }
+}

@@ -1,22 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
-import { services } from "../../mocks/servicesData"; // Adjust the import path accordingly
+import { services } from "../../mocks/servicesData";
 import { SERVICES_DETAILS01 } from "../../lib/assets";
 
 export const ServicesDetailsSidebar = ({
   hideContact = false,
   hideTitle = false,
 }) => {
+  const location = useLocation(); // Get current location
+  const [activeService, setActiveService] = useState(location.pathname);
+
+  // Update the active service when the route changes
+  useEffect(() => {
+    setActiveService(location.pathname);
+  }, [location]);
+
   return (
     <aside className="services-sidebar">
       {/* Our Services */}
       {hideTitle ? (
         <div className="services-cat-list mb-30">
           <ul className="list-wrap">
-            {services.map((item, idx) => (
-              <li key={item.title} className={cn({ active: idx === 0 })}>
-                <Link to={item.href}>
+            {services.map((item) => (
+              <li
+                key={item.title}
+                className={cn({ active: activeService === item.href })}
+              >
+                <Link
+                  to={item.href}
+                  onClick={() => setActiveService(item.href)}
+                >
                   {item.title} <i className="flaticon-right-arrow"></i>
                 </Link>
               </li>
@@ -28,9 +42,15 @@ export const ServicesDetailsSidebar = ({
           <h4 className="sw-title">Our Services</h4>
           <div className="services-cat-list">
             <ul className="list-wrap">
-              {services.map((item, idx) => (
-                <li key={item.title} className={cn({ active: idx === 0 })}>
-                  <Link to={item.href}>
+              {services.map((item) => (
+                <li
+                  key={item.title}
+                  className={cn({ active: activeService === item.href })}
+                >
+                  <Link
+                    to={item.href}
+                    onClick={() => setActiveService(item.href)}
+                  >
                     {item.title} <i className="flaticon-right-arrow"></i>
                   </Link>
                 </li>

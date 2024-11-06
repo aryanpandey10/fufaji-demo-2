@@ -9,8 +9,9 @@ import "./assets/css/swiper-bundle.min.css";
 import "./assets/css/flaticon.css";
 import "./assets/css/default.css";
 import "./assets/css/style.css";
-import "./assets/css/responsive.css"
+import "./assets/css/responsive.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "react-tabs/style/react-tabs.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

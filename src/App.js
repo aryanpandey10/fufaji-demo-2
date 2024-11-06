@@ -35,6 +35,11 @@ import ContactPage from "./pages/Contact/ContactPage";
 import { useWow } from "./lib/hooks/useWow";
 import { useAos } from "./lib/hooks/useAos";
 import { useJarallax } from "./lib/hooks/useJarallax";
+import VisaPage from "./pages/Visa482/VisaPage";
+import VisaPage482 from "./pages/Visa482/VisaPage482";
+import VisaPage186 from "./pages/Visa186/VisaPage186";
+import Difference482vs186 from "./pages/Difference482vs186/Difference482vs186";
+import DownloadPage from "./pages/Downloads/DownloadPage";
 
 function App() {
   useWow();
@@ -87,6 +92,11 @@ function App() {
           path="services-details-5"
           element={<ServicesDetailsPageFive />}
         />
+        <Route path="visas" element={<VisaPage />} />
+        <Route path="482-visa" element={<VisaPage482 />} />
+        <Route path="186-visa" element={<VisaPage186 />} />
+        <Route path="482-vs-186" element={<Difference482vs186 />} />
+        <Route path="downloads" element={<DownloadPage />} />
         <Route path="project-details" element={<ProjectDetailsPage />} />
         <Route path="team-details" element={<TeamDetailsPage />} />
         <Route path="/blog" element={<BlogPage />} />
